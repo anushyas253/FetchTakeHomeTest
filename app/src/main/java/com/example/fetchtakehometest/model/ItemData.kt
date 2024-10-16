@@ -6,5 +6,5 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class ItemData(val id:Long ,
                     val listId: Int,
-                    val name: String,) : Parcelable
+                    val name: String?,) : Parcelable
 

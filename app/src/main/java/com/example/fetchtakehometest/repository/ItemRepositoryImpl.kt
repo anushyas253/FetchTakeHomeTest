@@ -20,9 +20,6 @@ class ItemRepositoryImpl(private val apiService: ApiService) : ItemRepository {
             ) {
                 if (response.isSuccessful) {
                     val sortedItems = response.body()
-                        ?.filter { !it.name.isNullOrBlank() }
-                        ?.sortedWith(compareBy({ it.listId }, { it.name }))
-
                     itemsLiveData.value = sortedItems
                 }
             }

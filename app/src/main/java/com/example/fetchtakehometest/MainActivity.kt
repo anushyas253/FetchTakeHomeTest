@@ -17,7 +17,6 @@ import com.example.fetchtakehometest.viewmodel.ItemViewModel
 
 class MainActivity : AppCompatActivity() {
 
-
 }
 
 

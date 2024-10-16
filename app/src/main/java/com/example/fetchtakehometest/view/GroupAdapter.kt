@@ -1,5 +1,4 @@
-package com.example.fetchtakehometest
-import android.content.Context
+package com.example.fetchtakehometest.view
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -8,7 +7,7 @@ import com.example.fetchtakehometest.model.ItemData
 
 class GroupAdapter(
     private var groupedItems: Map<Int, List<ItemData>>,
-    private val onGroupClick: (Int) -> Unit // Callback to handle button clicks
+    private val onGroupClick: (Int) -> Unit
 ) : RecyclerView.Adapter<GroupAdapter.GroupViewHolder>() {
 
     private lateinit var binding: GroupListItemBinding
@@ -40,7 +39,7 @@ class GroupAdapter(
                 tvListid.text = "List ID: $listId"
 
                 btnListview.setOnClickListener {
-                    onGroupClick(listId) // Trigger the callback to update items in the current activity
+                    onGroupClick(listId)
                 }
             }
         }

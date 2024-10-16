@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="my_spinner_items">
+        <item>-none-</item>
+        <item>By ListId</item>
+        <item>By ListId, Name</item>
+
+    </string-array>
+
+    <string-array name="my_filter_items">
+        <item>-none-</item>
+        <item>apply</item>
+
+
+    </string-array>
+
+
+
+</resources>

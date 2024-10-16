@@ -13,14 +13,10 @@ import kotlinx.coroutines.launch
 
 class ItemViewModel : ViewModel() {
 
-    // Initialize RepositoryImpl directly with ApiService
     private val repository = ItemRepositoryImpl(ItemInstance.apiService)
-
-    // LiveData exposed to the View
     val items: MutableLiveData<List<ItemData>?> = repository.fetchItems()
 
-    // Function to fetch items (could add more logic here if needed)
-    fun fetchItems() {
+     fun fetchItems() {
         repository.fetchItems()
     }
 }
