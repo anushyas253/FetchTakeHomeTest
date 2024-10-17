@@ -2,7 +2,8 @@
 
 ## Description
 
-The **FetchTakeHomeTest** app is a native Android app written in Kotlin. It retrieves data from a remote API, filters, and sorts the data before displaying it. <br>
+The **FetchTakeHomeTest** app is a native Android app written in Kotlin.<br>
+It retrieves data from a remote API, filters, and sorts the data before displaying it. <br>
 It incorporates essential concepts I’ve learned throughout my career as an Android Software Engineer, including principles of Clean Architecture, best practices, and my own implementations.
 
 ---
@@ -39,7 +40,7 @@ The app is also integrated with **Hilt** for dependency injection to manage the 
 - Fetches data from an API (`https://fetch-hiring.s3.amazonaws.com/hiring.json`).
 - Filters items where `name` is empty or null.
 - Sorts data based on `listId` and `name`.
-- Displays the filtered and sorted data in a simple UI.
+- Displays items grouped by `listid` in a simple UI.
 
 ---
 
