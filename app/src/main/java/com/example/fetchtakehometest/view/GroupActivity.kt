@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fetchtakehometest.databinding.ActivityGroupBinding
 import com.example.fetchtakehometest.model.ItemData
 import com.example.fetchtakehometest.viewmodel.ItemViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class GroupActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityGroupBinding
