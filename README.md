@@ -1,18 +1,17 @@
-# Fetch Home Test
+# Fetch App
 
 ## Description
-A native Android application built using Kotlin that performs the following operations:
 
---Fetches data ( id, listId, and name) from an external API (**https://fetch-hiring.s3.amazonaws.com/hiring.json**).<br>
---Filters out any entries where the name is null or blank.
---Sorts the remaining data by listId first and then by name.
---Displays the sorted data grouped according to listId.
+The **FetchTakeHomeTest** app is a native Android app written in Kotlin. It retrieves data from a remote API, filters, and sorts the data before displaying it. <br>
+It incorporates essential concepts I’ve learned throughout my career as an Android Software Engineer, including principles of Clean Architecture, best practices, and my own implementations.
+
+---
+
 
 ### Table of Contents
 - [Architecture](#architecture)
 - [Features](#features)
 - [Libraries and Tools](#libraries-and-tools)
-- [Installation](#installation)
 - [Screenshots](#screenshots)
 
 ---
@@ -21,13 +20,13 @@ A native Android application built using Kotlin that performs the following oper
 The app follows **Clean Architecture** principles, with separation of concerns across three layers:
 
 1. **Data Layer**: Responsible for retrieving data from the API using Retrofit. It uses repository pattern to separate data sources.
-   - Example: `ItemRepositoryImpl`, `ApiService`
+   - Example: `ItemRepositoryImpl`, `ApiService`, `ItemData`
 
 2. **Domain Layer**: Contains business logic with use cases interacting with repositories.
-   - Example: `ItemUseCaseImpl`, `ItemData`
+   - Example: `ItemUseCaseImpl`
 
 3. **Presentation Layer**: Consists of ViewModels and Activities/Fragments to handle UI and lifecycle management.
-   - Example: `ItemViewModel`, `GroupActivity`
+   - Example: `ItemViewModel`, `ListDetailsActivity`, `GroupActivity` 
 
 The app is also integrated with **Hilt** for dependency injection to manage the lifecycle of components and ease testing.
 
@@ -53,7 +52,4 @@ The project makes use of the following libraries and tools:
 
 ---
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/FetchTakeHomeTest.git
+### 
