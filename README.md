@@ -60,5 +60,5 @@ The project makes use of the following libraries and tools:
 ### Navigation Flow of the App
 
 Flow navigation video: It testes all the previous options
-[Fetch_video_compressed.webm](https://github.com/anushyas253/FetchTakeHomeTest/blob/master/assests/Fetch_video_compressed.webm)
+[Click Here](https://github.com/anushyas253/FetchTakeHomeTest/blob/master/assests/Fetch_video_compressed.webm)
 
