@@ -17,6 +17,9 @@ It incorporates essential concepts I’ve learned throughout my career as an And
 ---
 
 ### Architecture
+
+<img width="306" alt="image" src="https://github.com/anushyas253/FetchTakeHomeTest/edit/master/assests">
+
 The app follows **Clean Architecture** principles, with separation of concerns across three layers:
 
 1. **Data Layer**: Responsible for retrieving data from the API using Retrofit. It uses repository pattern to separate data sources.
@@ -52,4 +55,4 @@ The project makes use of the following libraries and tools:
 
 ---
 
-### 
+### Scre
