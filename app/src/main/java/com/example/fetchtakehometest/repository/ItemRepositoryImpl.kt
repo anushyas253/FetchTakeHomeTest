@@ -7,9 +7,11 @@ import com.example.fetchtakehometest.model.ItemData
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import javax.inject.Inject
 
-class ItemRepositoryImpl(private val apiService: ApiService) : ItemRepository {
-
+class ItemRepositoryImpl @Inject constructor(
+    private val apiService: ApiService
+) : ItemRepository {
     private val itemsLiveData = MutableLiveData<List<ItemData>?>()
 
     override fun fetchItems(): MutableLiveData<List<ItemData>?> {

@@ -15,8 +15,10 @@ import com.example.fetchtakehometest.R
 import com.example.fetchtakehometest.databinding.ActivityListDetailsBinding
 import com.example.fetchtakehometest.model.ItemData
 import com.example.fetchtakehometest.viewmodel.ItemViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class ListDetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityListDetailsBinding
     private lateinit var itemAdapter: ItemAdapter

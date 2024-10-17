@@ -1,22 +1,20 @@
 package com.example.fetchtakehometest.viewmodel
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import com.example.fetchtakehometest.ItemInstance
 import com.example.fetchtakehometest.model.ItemData
-import com.example.fetchtakehometest.repository.ItemRepository
-import com.example.fetchtakehometest.repository.ItemRepositoryImpl
-import kotlinx.coroutines.launch
+import com.example.fetchtakehometest.usecase.ItemUsecase
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
+@HiltViewModel
+class ItemViewModel @Inject constructor(
+    private val itemUseCase: ItemUsecase
+) : ViewModel() {
 
-class ItemViewModel : ViewModel() {
+    val items: LiveData<List<ItemData>?> = itemUseCase.execute()
 
-    private val repository = ItemRepositoryImpl(ItemInstance.apiService)
-    val items: MutableLiveData<List<ItemData>?> = repository.fetchItems()
-
-     fun fetchItems() {
-        repository.fetchItems()
+    fun fetchItems() {
+        itemUseCase.execute()
     }
 }
