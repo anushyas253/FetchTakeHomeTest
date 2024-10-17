@@ -18,7 +18,7 @@ It incorporates essential concepts I’ve learned throughout my career as an And
 
 ### Architecture
 
-<img width="306" alt="image" src="https://github.com/anushyas253/FetchTakeHomeTest/edit/master/assests">
+<img width="306" alt="image" src="C:\Users\anush\OneDrive\Desktop\img">
 
 The app follows **Clean Architecture** principles, with separation of concerns across three layers:
 
