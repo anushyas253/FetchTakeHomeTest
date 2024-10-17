@@ -1,10 +1,12 @@
 # Fetch App
 
+---
+
 ## Description
 
-The **FetchTakeHomeTest** app is a native Android app written in Kotlin.<br>
-It retrieves data from a remote API, filters, and sorts the data before displaying it. <br>
-It incorporates essential concepts I’ve learned throughout my career as an Android Software Engineer, including principles of Clean Architecture, best practices, and my own implementations.
+- The **FetchTakeHomeTest** app is a native Android app written in Kotlin.<br>
+- It retrieves data from a remote API, filters, and sorts the data before displaying it. <br>
+- It incorporates essential concepts I’ve learned throughout my career as an Android Software Engineer, including principles of Clean Architecture, best practices, and my own implementations.
 
 ---
 
@@ -59,5 +61,5 @@ The project makes use of the following libraries and tools:
 ### Navigation Flow of the App
 
 Flow navigation video: It testes all the previous options
-[Click Here](https://github.com/anushyas253/FetchTakeHomeTest/blob/master/assests/Fetch_video%20(1).mp4)
+[Click Here](https://github.com/anushyas253/FetchTakeHomeTest/blob/master/assests/Fetch_video_compressed.webm)
 
