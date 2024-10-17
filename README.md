@@ -18,7 +18,7 @@ It incorporates essential concepts I’ve learned throughout my career as an And
 
 ### Architecture
 
-<img width="506" alt="image" src="https://github.com/anushyas253/FetchTakeHomeTest/blob/master/assests/img.png">
+<img width="800" alt="image" src="https://github.com/anushyas253/FetchTakeHomeTest/blob/master/assests/img.png">
 
 The app follows **Clean Architecture** principles, with separation of concerns across three layers:
 
